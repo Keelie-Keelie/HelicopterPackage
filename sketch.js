@@ -71,8 +71,8 @@ function draw() {
   rectMode(CENTER);
   background(0);
  
-  //packageSprite.x= packageBody.position.x 
-  //packageSprite.y= packageBody.position.y 
+  packageSprite.x= packageBody.position.x 
+  packageSprite.y= packageBody.position.y 
 
   
   drawSprites();
@@ -97,6 +97,8 @@ function keyPressed(){
 	} else if(keyCode === DOWN_ARROW){
   
       Matter.Body.setStatic(packageBody, false);
+		packageSprite.x = 400;
+         packageSprite.y = 640; 
 
 	}
 
